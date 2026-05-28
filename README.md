@@ -26,3 +26,18 @@ This page has pictures of furniture. I used CSS to make all the pictures the sam
 
 ## Contact page
 This page has the business address, phone number and email. There is also a contact form where people can type their name and message. The form does not work yet because we have not learned how to make it work. 
+
+### Technologies Used
+- HTML5
+- CSS3
+- Visual Studio Code
+- Tested in Google Chrome and microsoft edge
+
+### How to Run
+1. Open in any web browser
+
+### Features
+- Brown wood-themed color scheme
+- Simple navigation bar on all pages  
+- Contact form layout does not send email yet
+- Images of carpentry tools and furniture
