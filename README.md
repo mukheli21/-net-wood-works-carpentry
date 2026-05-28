@@ -20,3 +20,9 @@ This page explains what we do. We build tables, chairs and cupboards from strong
 
 ## Services
 This page lists what we can make. We have kitchen cupboards, dining tables, shelves and wardrobes. I wrote one short paragraph for each one.
+
+**Gallery page**  
+This page has pictures of furniture. I used CSS to make all the pictures the same size and to put space between them so it looks neat.
+
+**Contact page**  
+This page has the business address, phone number and email. There is also a contact form where people can type their name and message. The form does not work yet because we have not learned how to make it work. 
