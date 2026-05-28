@@ -1,0 +1,255 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: wheat;
+  color: saddlebrown;
+}
+
+/*Div logo*/
+.main { 
+    width: 100%;
+}
+
+.logo{
+    color: saddlebrown;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+
+/* HEADER */
+header {
+  background-color: saddlebrown;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-bottom: 5px solid goldenrod;
+}
+
+header img {
+  width: 80%;
+  height: 250px;
+}
+
+header h1 {
+  font-size: 36px;
+  color: white;
+  margin-top: 10px;
+}
+
+header h4 {
+  font-size: 16px;
+  color: goldenrod;
+  margin-top: 5px;
+}
+
+/* NAVIGATION  */
+nav {
+  background-color: sienna;
+  text-align: center;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display:contents;
+}
+
+nav li {
+  display: inline; 
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 15px;
+  background-color: sienna;
+}
+
+nav a:hover {
+  background-color: goldenrod;
+  color: saddlebrown;
+}
+
+/* MAIN CONTENT */
+main {
+  width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+}
+
+main h1 {
+  font-size: 28px;
+  color: sienna;
+  border-left: 5px solid goldenrod;
+  padding-left: 10px;
+  margin-bottom: 15px;
+}
+
+main p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+main img {
+  width: 100%;
+  border: 3px solid sienna;
+  margin-top: 10px;
+}
+
+/* FOOTER */
+footer {
+  background-color: saddlebrown;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+  border-top: 4px solid goldenrod;
+}
+
+footer a {
+  color: goldenrod;
+}
+
+/* GALLERY PAGE */
+.gallery img {
+  width: 100;
+  height: 150;
+  border: 3px solid sienna;
+  margin: 5px;
+  display: inline-block;
+}
+
+/* CONTACT FORM */
+form {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  color: sienna;
+  margin-top: 10px;
+}
+
+input textarea {
+  width: 400px;
+  padding: 8px;
+  border: 2px solid sienna;
+  margin-top: 5px;
+}
+
+button {
+  background-color: sienna;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  border: none;
+  margin-top: 10px;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: goldenrod;
+  color: saddlebrown;
+}
+
+
+/* CONTACT FORM */
+form {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  color: sienna;
+  margin-top: 15px;
+  font-size: 18px; 
+}
+
+input, textarea {
+  width: 500px; 
+  padding: 12px;
+  border: 2px solid sienna;
+  margin-top: 8px;
+  font-size: 16px; 
+}
+
+textarea {
+  height: 150px; 
+}
+
+button {
+  background-color: sienna;
+  color: white;
+  padding: 12px 30px; 
+  border: none;
+  margin-top: 15px;
+  cursor: pointer;
+  font-size: 18px; 
+}
+
+button:hover {
+  background-color: goldenrod;
+  color: saddlebrown;
+}
+
+main h1 {
+  font-size: 32px; 
+  color: sienna;
+  border-left: 5px solid goldenrod;
+  padding-left: 12px;
+  margin-bottom: 20px;
+}
+
+main p {
+  font-size: 18px; 
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+/* Media queries */
+@media screen and (max-width: 600px) {
+  main {
+    width: 90%;
+  }
+  
+  nav li {
+    display: block; /* Stack on small phones only */
+    margin: 5px 0;
+  }
+  
+  input, textarea {
+    width: 100%;
+  }
+}
+
+input, textarea{
+    width: 95%;
+
+    form{ 
+        width: 100%;
+    }
+
+
+}
+
+
+
+
