@@ -261,13 +261,48 @@ main p {
 }
 
 /* Media queries */
+
+
+/*Big phones / small tablets: 601px - 900px */
+
+@media screen and (max-width: 900px) {
+  main {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .features-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+
+  nav ul li {
+    display: inline-block; /* Keep nav horizontal on big phones */
+    margin: 5px 10px;
+  }
+
+  .gallery img {
+    width: 45%; /* 2 images per row on tablets */
+    height: 180px;
+  }
+
+  input, textarea {
+    width: 100%;
+    max-width: 450px;
+  }
+
+  header img {
+    width: 100%;
+    height: auto; /* Fixes stretched logo on tablets */
+  }
+}
 @media screen and (max-width: 600px) {
   main {
     width: 90%;
   }
   
   nav li {
-    display: block; /* Stack on small phones only */
+    display: block; /*small phones only */
     margin: 5px 0;
   }
   
