@@ -12,11 +12,11 @@ This is a simple, multi-page static website for **Net Wood Works Carpentry**, a 
 
 ## File Structure
 
-## home
-The home page is the first page users see when they enter and acts as the website's primary entry point. It begins with a big header banner that instantly conveys the nature and identity of the company by superimposing the company name and tagline over a backdrop image of a carpentry workshop. The website has a welcome introduction text beneath the navigation bar that provides a quick overview of Net Wood Works Carpentry's identity, areas of skills, and unique selling points. To provide customers with an instant visual picture of the quality of the company's craftsmanship, a large featured photograph of carpentry work is prominently displayed.Further down the page, a four-card feature grid highlights the key reasons to choose Net Wood Works Carpentry — Premium Materials, Custom Design, Expert Craftsmanship, and On-Time Delivery — each with a short description. The page ends with a call-to-action banner that encourages visitors to get in touch and request a free consultation or quote, with a direct link to the Contact page.
+ ## Home
+This is the first page people see. It has the name of the business and a photo. It says we make custom furniture in Polokwane.
 
-## About us
-The company's mission and the reasons clients should entrust us with building their furniture are described on the About Us page. On this page, we inform visitors about Net Wood Works Carpentry, a Polokwane-based small company that creates personalised wooden furniture for residences and workplaces. We explain that we founded the company because we enjoy working with wood and wish to assist individuals in finding long-lasting, well-fitting furniture. Additionally, the page explains to them why they should pick us. We discuss the use of strong, high-quality timber rather than inexpensive, easily broken planks. 
+## About Us 
+This page explains what we do. We build tables, chairs and cupboards from strong wood. We tell customers we measure first so the furniture fits their house.
 
-## Service
-One of the most crucial sections of the website is the services section. It outlines the many carpentry and woodworking services that Net Wood Works Carpentry offers. To help clients understand what the business offers, each service is presented with an image and explanation.
+## Services
+This page lists what we can make. We have kitchen cupboards, dining tables, shelves and wardrobes. I wrote one short paragraph for each one.
