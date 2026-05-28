@@ -17,3 +17,6 @@ The home page is the first page users see when they enter and acts as the websit
 
 ## About us
 The company's mission and the reasons clients should entrust us with building their furniture are described on the About Us page. On this page, we inform visitors about Net Wood Works Carpentry, a Polokwane-based small company that creates personalised wooden furniture for residences and workplaces. We explain that we founded the company because we enjoy working with wood and wish to assist individuals in finding long-lasting, well-fitting furniture. Additionally, the page explains to them why they should pick us. We discuss the use of strong, high-quality timber rather than inexpensive, easily broken planks. 
+
+## Service
+One of the most crucial sections of the website is the services section. It outlines the many carpentry and woodworking services that Net Wood Works Carpentry offers. To help clients understand what the business offers, each service is presented with an image and explanation.
