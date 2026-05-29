@@ -41,3 +41,22 @@ This page has the business address, phone number and email. There is also a cont
 - Simple navigation bar on all pages  
 - Contact form layout does not send email yet
 - Images of carpentry tools and furniture
+- 
+## References
+
+MDN Web Docs, 2026. *Using media queries*. 
+Available at: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries (Accessed: 28 May 2026).
+
+Net Wood Works Carpentry, 2026. *Company images and content*. 
+Available at: https://mukheli21.github.io/-net-wood-works-carpentry/ (Accessed: 28 May 2026).
+
+W3Schools, 2026. *CSS Media Queries*. 
+Available at: https://www.w3schools.com/css/css_rwd_mediaqueries.asp (Accessed: 28 May 2026).
+
+W3Schools, 2026. *CSS Responsive Web Design Tutorial*. 
+Available at: https://www.w3schools.com/css/css_rwd_intro.asp (Accessed: 28 May 2026).
+
+W3Schools, 2026. *CSS Tutorial*.
+Available at: https://www.w3schools.com/css/ (Accessed: 28 May 2026).
+
+
