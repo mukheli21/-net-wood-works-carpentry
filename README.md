@@ -42,7 +42,7 @@ This page has the business address, phone number and email. There is also a cont
 - Contact form layout does not send email yet
 - Images of carpentry tools and furniture
 
-## Reference
+## References
 
 MDN Web Docs, 2026. *Using media queries*. 
 Available at: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries (Accessed: 28 May 2026).
@@ -58,5 +58,3 @@ Available at: https://www.w3schools.com/css/css_rwd_intro.asp (Accessed: 28 May 
 
 W3Schools, 2026. *CSS Tutorial*.
 Available at: https://www.w3schools.com/css/ (Accessed: 28 May 2026).
-
-
