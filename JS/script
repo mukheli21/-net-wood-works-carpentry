@@ -1,0 +1,49 @@
+// 1. Back to Top Button
+let topBtn = document.getElementById("topBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    topBtn.style.display = "block";
+  } else {
+    topBtn.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+// 2. Simple form validation for enquiry.html
+function validateForm() {
+  let name = document.forms["enquiryForm"]["name"].value;
+  let email = document.forms["enquiryForm"]["email"].value;
+  let message = document.forms["enquiryForm"]["message"].value;
+  
+  if (name == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+  if (email == "") {
+    alert("Email must be filled out");
+    return false;
+  }
+  if (message == "") {
+    alert("Please enter your message");
+    return false;
+  }
+  alert("Thank you! Your enquiry has been sent.");
+  return true;
+}
+
+// 3. Simple image lightbox for Gallery.html
+function openLightbox(imgSrc) {
+  document.getElementById("lightbox").style.display = "block";
+  document.getElementById("lightbox-img").src = imgSrc;
+}
+
+function closeLightbox() {
+  document.getElementById("lightbox").style.display = "none";
+}
