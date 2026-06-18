@@ -94,6 +94,33 @@ Net-Wood-Works-Carpentry
 - Tested all JavaScript functionality on live site
 - Verified responsive design on desktop, tablet, and mobile
 
+  **Screenshots**
+
+### Homepage - Desktop View
+![Homepage Desktop](Screenshots/Home%20page-desktop.png)
+
+### Homepage - iPhone 12
+![Homepage Mobile](Screenshots/Home%20page-Iphone%2012.png)
+
+### About Us Page
+![About Us](Screenshots/About%20us-desktop.png)
+
+### Services Page
+![Services](Screenshots/Services-desktop.png)
+
+### Gallery Page
+![Gallery](Screenshots/Gallery%20loaded.png)
+
+### Contact Form - Empty
+![Form Empty](Screenshots/Form%20empty.png)
+
+### Form Validation Error
+![Form Error](Screenshots/Form%20validation%20error.png)
+
+### Footer Section
+![Footer](<Screenshots/Footer%20and%20top%20button-iphone%2012.png)
+
+
 ### Part 2 - 2026-05-29
 - Made website responsive using CSS media queries
 - Tested layout on desktop, tablet, and mobile viewports
