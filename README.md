@@ -118,7 +118,7 @@ Net-Wood-Works-Carpentry
 ![Form Error](Screenshots/Form%20validation%20error.png)
 
 ### Footer Section
-![Footer](<Screenshots/Footer%20and%20top%20button-iphone%2012.png)
+![Footer](Screenshots/Footer%20and%20top%20button-iphone%2012.png)
 
 
 ### Part 2 - 2026-05-29
