@@ -3,101 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Net Wood Works Carpentry</title>
+    <title>Contact Us | Net Wood Works Carpentry Polokwane</title>
+    
+    <!-- SEO -->
+    <meta name="description" content="Contact Net Wood Works Carpentry in Polokwane. Call 015 205 2358 or visit 289 Dorp Street. Get a free quote for custom furniture and woodwork.">
+    <meta name="keywords" content="contact carpenter Polokwane, Net Wood Works phone number, custom furniture quote, woodwork Polokwane">
+    <meta name="author" content="Net Wood Works Carpentry">
+    
+    <!-- CSS -->
     <link rel="stylesheet" href="CSS/STYLE.CSS">
-
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+</head>
 <body>
-     <div class="main">
+    <div class="main">
         <div class="navbar">
             <div class="icon">
-                <div class="logo"> Net Wood works
-  
-
+                <div class="logo">
+                    <i class="fa-solid fa-hammer"></i>
+                    Net Wood works
                 </div>
             </div>
-
-
-
         </div>
-    
-    </div>
 
-
-    <header>
-        <img src="image/eugen-str-CrhsIRY3JWY-unsplash.jpg"> 
-        <h1>Net Wood Works Carpentry</h1>
-        <h4>Designed to last for many generations</h4>
-    </header> 
-    
-<nav>
+        <header>
+            <img src="image/eugen-str-CrhsIRY3JWY-unsplash.jpg" alt="Contact Net Wood Works Carpentry for custom woodwork projects" class="image-logo"> 
+            <h1>Net Wood Works Carpentry</h1>
+            <h4>Designed to last for many generations</h4>
+        </header> 
+        
+        <nav>
   <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="About-us.html">About Us</a></li>
-    <li><a href="Service.html">Services</a></li>
-    <li><a href="Contact.html">Contact</a></li>
-    <li><a href="Gallery.html">Gallery</a></li>
+    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+    <li><a href="About Us.html"><i class="fas fa-users"></i> About Us</a></li>
+    <li><a href="Services.html"><i class="fas fa-screwdriver-wrench"></i> Services</a></li>
+    <li><a href="Contact.html"><i class="fas fa-phone"></i> Contact</a></li>
+    <li><a href="Gallery.html"><i class="fas fa-images"></i> Gallery</a></li>
+    <li><a href="Enquiry.html"><i class="fas fa-file-lines"></i> Enquiry</a></li>
   </ul>
-</nav>
-
-     
-
-    <main>
-
-        <h1>Contact Us </h1>
-       <p>Email:Netwoodworks@gmail.com</p>
-       <p>Phone: 015 205 2358</p>
-       <p>Adress: 289 Dorp street,Polokwane </p>
-       <p>Monday:8am-5pm</p>
-       <p>Tuesday:8am-5pm</p>
-       <p>Wednesday:8am-5pm</p>
-       <p>Thursday:8am-5pm</p>
-       <p>Friday:8am-5pm</p>
-       <p>Saturday:8am-5pm</p>
-       <p>Sunday:Closed</p>
-
-       <h1>Contact Form</h1>
-       <p>We would love to hear from you! please fill out the form below</p>
-
-       <form>
-        
-        <label for="First name"> First name:</label>
-        <br>
-        <input type="text"id="First name"> 
-        <br><br>
-
-
-        <label for="Last name"> Last name:</label>
-        <br>
-        <input type="text"id="Last name"> 
-        <br><br>
-
-        <label for="Email"> Email:</label>
-        <br>
-        <input type="text"id="Email"> 
-        <br><br>
-
-      <label for="Message"> Message:</label>
-        <br>
-        <textarea name="Message" id="Message" rows="6" cols="6"></textarea>
-        <br><br>
-
-        <input type="submit">
-
-       </form>
-        
-    </main>
-
-<footer>
-    <hr>
-    author:Net Wood Works Carpentry<br>
-    &copy;copyright reserved<br>
-    <small><a href="mailto:NetWoodworks@gmail.com">NetWoodworks@gmail.com</a></small>
-
-
-
-
-
-    </footer>
+        </nav>
     
+        <main>
+            <h2><i class="fa-solid fa-address-book"></i> Contact Us</h2>
+            
+            <div class="contact-info">
+                <p><i class="fa-solid fa-envelope"></i> Email: Netwoodworks@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> Phone: 015 205 2358</p>
+                <p><i class="fa-solid fa-location-dot"></i> Address: 289 Dorp street, Polokwane</p>
+            </div>
+
+            <div class="hours">
+                <h3><i class="fa-solid fa-clock"></i> Business Hours</h3>
+                <p>Monday: 8am-5pm</p>
+                <p>Tuesday: 8am-5pm</p>
+                <p>Wednesday: 8am-5pm</p>
+                <p>Thursday: 8am-5pm</p>
+                <p>Friday: 8am-5pm</p>
+                <p>Saturday: 8am-5pm</p>
+                <p>Sunday: Closed</p>
+            </div>
+
+            <h2><i class="fa-solid fa-paper-plane"></i> General Contact Form</h2>
+            <p>Have a general question? Please fill out the form below</p>
+
+            <form id="contactPageForm" novalidate>
+                <label for="firstName">First name:</label>
+                <br>
+                <input type="text" id="firstName" name="firstName" required>
+                <span class="error-message" id="firstNameError"></span>
+                <br><br>
+
+                <label for="lastName">Last name:</label>
+                <br>
+                <input type="text" id="lastName" name="lastName" required>
+                <span class="error-message" id="lastNameError"></span>
+                <br><br>
+
+                <label for="email">Email:</label>
+                <br>
+                <input type="email" id="email" name="email" required>
+                <span class="error-message" id="emailError"></span>
+                <br><br>
+
+                <label for="message">Message:</label>
+                <br>
+                <textarea name="message" id="message" rows="6" cols="30" required></textarea>
+                <span class="error-message" id="messageError"></span>
+                <br><br>
+
+                <input type="submit" value="Send Message" class="btn">
+            </form>
+            
+            <div id="formSuccess" class="success-message"></div>
+        </main>
+
+        <button id="backToTop" onclick="scrollToTop()" title="Go to top">
+            <i class="fa-solid fa-arrow-up"></i> Top
+        </button>
+
+        <footer>
+            <hr>
+            <p><i class="fa-solid fa-copyright"></i> author: Net Wood Works Carpentry</p>
+            <p>&copy; 2026 copyright reserved</p>
+            <small>
+                <a href="mailto:NetWoodworks@gmail.com">
+                    <i class="fa-solid fa-envelope"></i> NetWoodworks@gmail.com
+                </a>
+            </small>
+        </footer>
+    </div>
+    <!-- JavaScript -->
+    <script src="js/script"></script>
 </body>
 </html>

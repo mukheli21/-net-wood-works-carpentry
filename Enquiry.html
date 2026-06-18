@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry Form | Net Wood Works Carpentry</title>
+    
+    <!-- SEO -->
+    <meta name="description" content="Submit an enquiry to Net Wood Works Carpentry. Get a free quote for custom furniture, kitchen units, and woodwork in Polokwane.">
+    <meta name="keywords" content="carpentry quote, furniture enquiry, custom woodwork price, Net Wood Works Polokwane">
+    <meta name="author" content="Net Wood Works Carpentry">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/STYLE.CSS">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <div class="logo">
+                    <i class="fa-solid fa-hammer"></i>
+                    Net Wood works
+                </div>
+            </div>
+        </div>
+
+        <header>
+            <img src="image/eugen-str-CrhsIRY3JWY-unsplash.jpg" alt="Request a quote from Net Wood Works Carpentry" class="image-logo">
+            <h1>Net Wood Works Carpentry</h1>
+            <h4>Designed to last for many generations</h4>
+        </header> 
+
+        <nav>
+  <ul>
+    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+    <li><a href="About Us.html"><i class="fas fa-users"></i> About Us</a></li>
+    <li><a href="Services.html"><i class="fas fa-screwdriver-wrench"></i> Services</a></li>
+    <li><a href="Contact.html"><i class="fas fa-phone"></i> Contact</a></li>
+    <li><a href="Gallery.html"><i class="fas fa-images"></i> Gallery</a></li>
+    <li><a href="Enquiry.html"><i class="fas fa-file-lines"></i> Enquiry</a></li>
+  </ul>
+     </nav>
+
+        <main>
+            <h2><i class="fa-solid fa-file-invoice"></i> Project Enquiry Form</h2>
+            <p>Fill out this form to get a free, no-obligation quote. We'll get back to you within 24 hours.</p>
+            
+            <form id="enquiryForm" novalidate>
+                <h3><i class="fa-solid fa-user"></i> Your Details</h3>
+                
+                <label for="fullName">Full Name:</label>
+                <br>
+                <input type="text" id="fullName" name="fullName" required>
+                <span class="error-message" id="fullNameError"></span>
+                <br><br>
+
+                <label for="enquiryEmail">Email Address:</label>
+                <br>
+                <input type="email" id="enquiryEmail" name="enquiryEmail" required>
+                <span class="error-message" id="enquiryEmailError"></span>
+                <br><br>
+
+                <label for="phone">Phone Number:</label>
+                <br>
+                <input type="tel" id="phone" name="phone" placeholder="e.g. 015 205 2358" required>
+                <span class="error-message" id="phoneError"></span>
+                <br><br>
+
+                <h3><i class="fa-solid fa-clipboard-list"></i> Project Details</h3>
+
+                <label>Service Needed:</label>
+                <br>
+                <input type="checkbox" id="furniture" name="service" value="Custom Furniture">
+                <label for="furniture">Custom Furniture</label><br>
+                
+                <input type="checkbox" id="kitchen" name="service" value="Kitchen Cabinets">
+                <label for="kitchen">Kitchen Cabinets</label><br>
+                
+                <input type="checkbox" id="wardrobe" name="service" value="Wardrobes/Closets">
+                <label for="wardrobe">Wardrobes/Closets</label><br>
+                
+                <input type="checkbox" id="tables" name="service" value="Tables">
+                <label for="tables">Tables</label><br>
+                
+                <input type="checkbox" id="chairs" name="service" value="Chairs">
+                <label for="chairs">Chairs</label><br>
+                
+                <input type="checkbox" id="shelves" name="service" value="Shelves">
+                <label for="shelves">Shelves</label><br>
+                
+                <input type="checkbox" id="other" name="service" value="Other">
+                <label for="other">Other</label>
+                <span class="error-message" id="serviceError"></span>
+                <br><br>
+
+                <label for="priceRange">Estimated Budget Range:</label>
+                <br>
+                <select id="priceRange" name="priceRange" required>
+                    <option value="">-- Select Price Range --</option>
+                    <option value="R1000-R5000">R1,000 - R5,000</option>
+                    <option value="R5000-R10000">R5,000 - R10,000</option>
+                    <option value="R10000-R20000">R10,000 - R20,000</option>
+                    <option value="R20000-R50000">R20,000 - R50,000</option>
+                    <option value="R50000+">R50,000+</option>
+                    <option value="Not Sure">Not Sure - Need Advice</option>
+                </select>
+                <span class="error-message" id="priceRangeError"></span>
+                <br><br>
+
+                <label for="timeline">When do you need this completed?</label>
+                <br>
+                <select id="timeline" name="timeline" required>
+                    <option value="">-- Select Timeline --</option>
+                    <option value="ASAP">As Soon As Possible</option>
+                    <option value="1-2 Weeks">1 - 2 Weeks</option>
+                    <option value="1 Month">Within 1 Month</option>
+                    <option value="2-3 Months">2 - 3 Months</option>
+                    <option value="Flexible">Flexible</option>
+                </select>
+                <span class="error-message" id="timelineError"></span>
+                <br><br>
+
+                <label for="projectDetails">Project Description:</label>
+                <br>
+                <textarea name="projectDetails" id="projectDetails" rows="6" cols="40" placeholder="Tell us about your project. Include sizes, wood type, color, etc." required></textarea>
+                <span class="error-message" id="projectDetailsError"></span>
+                <br><br>
+
+                <label for="hearAbout">How did you hear about us?</label>
+                <br>
+                <select id="hearAbout" name="hearAbout">
+                    <option value="">-- Please Select --</option>
+                    <option value="Google">Google Search</option>
+                    <option value="Facebook">Facebook</option>
+                    <option value="Friend">Friend/Family Referral</option>
+                    <option value="Saw Work">Saw Your Work</option>
+                    <option value="Other">Other</option>
+                </select>
+                <br><br>
+
+                <input type="submit" value="Submit Enquiry" class="btn">
+                <input type="reset" value="Clear Form" class="btn-secondary">
+            </form>
+            
+            <div id="enquirySuccess" class="success-message"></div>
+        </main>
+
+        <button id="backToTop" onclick="scrollToTop()" title="Go to top">
+            <i class="fa-solid fa-arrow-up"></i> Top
+        </button>
+
+        <footer>
+            <hr>
+            <p><i class="fa-solid fa-copyright"></i> author: Net Wood Works Carpentry</p>
+            <p>&copy; 2026 copyright reserved</p>
+            <small>
+                <a href="mailto:NetWoodworks@gmail.com">
+                    <i class="fa-solid fa-envelope"></i> NetWoodworks@gmail.com
+                </a>
+            </small>
+        </footer>
+    </div>
+    <!-- JavaScript -->
+    <script src="js/script"></script>
+</body>
+</html>

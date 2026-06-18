@@ -3,87 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Net Wood Works Carpentry</title>
-      <link rel="stylesheet" href="CSS/STYLE.CSS">
+    <title>Gallery | Net Wood Works Carpentry Polokwane</title>
+    
+    <!-- SEO -->
+    <meta name="description" content="View our gallery of custom carpentry work. Kitchen units, wardrobes, tables, chairs and wood installations by Net Wood Works in Polokwane.">
+    <meta name="keywords" content="carpentry gallery, custom furniture photos, woodwork Polokwane, kitchen units gallery, Net Wood Works projects">
+    <meta name="author" content="Net Wood Works Carpentry">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/STYLE.CSS">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
 
 </head>
 <body>
-     <div class="main">
+    <div class="main">
         <div class="navbar">
             <div class="icon">
-                <div class="logo"> Net Wood works
-  
-
+                <div class="logo">
+                    <i class="fa-solid fa-hammer"></i>
+                    Net Wood works
                 </div>
             </div>
-
-
-
         </div>
 
-    </div>
-    <!--Header section-->
-    <header>
-        <img src="image/eugen-str-CrhsIRY3JWY-unsplash.jpg" width="200" height="200">
-        <h1>Net Wood Works Carpentry</h1>
-        <h4>Designed to last for many generations</h4>
+        <!--Header section-->
+        <header>
+            <img src="image/eugen-str-CrhsIRY3JWY-unsplash.jpg" alt="Net Wood Works Carpentry logo - quality woodwork" width="200" height="200" class="image-logo">
+            <h1>Net Wood Works Carpentry</h1>
+            <h4>Designed to last for many generations</h4>
         </header> 
 
-<nav>
+        <nav>
   <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="About-us.html">About Us</a></li>
-    <li><a href="Service.html">Services</a></li>
-    <li><a href="Contact.html">Contact</a></li>
-    <li><a href="Gallery.html">Gallery</a></li>
+    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+    <li><a href="About-us.html"><i class="fas fa-users"></i> About Us</a></li>
+    <li><a href="Service.html"><i class="fas fa-screwdriver-wrench"></i> Services</a></li>
+    <li><a href="Contact.html"><i class="fas fa-phone"></i> Contact</a></li>
+    <li><a href="Gallery.html"><i class="fas fa-images"></i> Gallery</a></li>
+    <li><a href="Enquiry.html"><i class="fas fa-file-lines"></i> Enquiry</a></li>
   </ul>
-</nav>
-   
+        </nav> 
 
-    <main>
+        <main>
+            <h2><i class="fa-solid fa-images"></i> Gallery</h2>
+            <p>Browse our collection of completed custom carpentry projects. Click any image to view full size.</p>
+            <br>
 
-        <h1>Gallery</h1>
+            <div class="gallery">
+                <img src="image/andrey-haimin-q2Fyzn-KJOQ-unsplash.jpg" alt="Custom wooden dining table by Net Wood Works" class="gallery-img"> 
+                
+                <img src="image/benjamin-lehman-EJU7A__krX0-unsplash.jpg" alt="Handcrafted wooden chair design" class="gallery-img">
+                
+                <img src="image/caroline-badran-1jBY2qf7-MM-unsplash.jpg" alt="Modern kitchen unit installation" class="gallery-img"> 
+                
+                <img src="image/denys-striyeshyn-wJ7yGwz2-00-unsplash.jpg" alt="Custom wooden shelving unit" class="gallery-img"> 
+                
+                <img src="image/eugen-str-CrhsIRY3JWY-unsplash.jpg" alt="Carpentry workshop tools and timber" class="gallery-img">
+                 
+                <img src="image/jeriden-villegas-VLPUm5wP5Z0-unsplash.jpg" alt="Bespoke wooden wardrobe" class="gallery-img">
+                 
+                <img src="image/kam-idris-hYb7kbu4x7E-unsplash.jpg" alt="Wooden coffee table with natural finish" class="gallery-img"> 
+                
+                <img src="image/pickawood-rwa0Yh38FeA-unsplash.jpg" alt="Custom kitchen cabinet installation" class="gallery-img">
+                
+                <img src="image/ryan-riggins-9v7UJS92HYc-unsplash.jpg" alt="Wooden office desk design" class="gallery-img">
+                
+                <img src="image/ryno-marais-p5JcD-_13ek-unsplash.jpg" alt="Rustic wooden door installation" class="gallery-img"> 
+                
+                <img src="image/samuel-cruz-o8C5SxNCGaw-unsplash.jpg" alt="Custom drawer and storage solution" class="gallery-img"> 
+                
+                <img src="image/sergei-sushchik-DQpUeNzRj6s-unsplash.jpg" alt="Wooden bench for outdoor area" class="gallery-img"> 
+            </div>
 
-        <br>
+            <!-- Lightbox-->
+            <div id="lightbox" class="lightbox">
+                <span class="close-lightbox" onclick="closeLightbox()">&times;</span>
+                <img class="lightbox-content" id="lightboxImg">
+                <div id="lightboxCaption"></div>
+            </div>
+        </main>
 
-        <img src="image/andrey-haimin-q2Fyzn-KJOQ-unsplash.jpg" > 
-        
-        <img src="image/benjamin-lehman-EJU7A__krX0-unsplash.jpg ">
-        
-        <img src="image/caroline-badran-1jBY2qf7-MM-unsplash.jpg"> 
-        
-        <img src="image/denys-striyeshyn-wJ7yGwz2-00-unsplash.jpg"> 
-        
-        <img src="image/eugen-str-CrhsIRY3JWY-unsplash.jpg">
-         
-        <img src="image/jeriden-villegas-VLPUm5wP5Z0-unsplash.jpg">
-         
-        <img src="image/kam-idris-hYb7kbu4x7E-unsplash.jpg"> 
-        
-        <img src="image/pickawood-rwa0Yh38FeA-unsplash.jpg">
-        
-        <img src="image/ryan-riggins-9v7UJS92HYc-unsplash.jpg">
-        
-        <img src="image/ryno-marais-p5JcD-_13ek-unsplash.jpg"> 
-        
-        <img src="image/samuel-cruz-o8C5SxNCGaw-unsplash.jpg"> 
-        
-        <img src="image/sergei-sushchik-DQpUeNzRj6s-unsplash.jpg"> 
-    
-        
-    </main>
+        <button id="backToTop" onclick="scrollToTop()" title="Go to top">
+            <i class="fa-solid fa-arrow-up"></i> Top
+        </button>
 
-<footer>
-    <hr>
-    author:Net Wood Works Carpentry<br>
-    &copy;copyright reserved<br>
-    <small><a href="mailto:NetWoodworks@gmail.com">NetWoodworks@gmail.com</a></small>
-
-
-
-
-
-    </footer>
-    
+        <footer>
+            <hr>
+            <p><i class="fa-solid fa-copyright"></i> author: Net Wood Works Carpentry</p>
+            <p>&copy; 2026 copyright reserved</p>
+            <small>
+                <a href="mailto:NetWoodworks@gmail.com">
+                    <i class="fa-solid fa-envelope"></i> NetWoodworks@gmail.com
+                </a>
+            </small>
+        </footer>
+    </div>
+    <!-- JavaScript -->
+    <script src="js/script"></script>
 </body>
 </html>

@@ -1,49 +1,280 @@
-// 1. Back to Top Button
-let topBtn = document.getElementById("topBtn");
+// BACK TO TOP BUTTON
+// Shows button when user scrolls down 100px
 
-window.onscroll = function() {scrollFunction()};
+// Get the top button 
+var topButton = document.getElementById("backToTop");
+
+// When user scrolls, run scrollFunction
+window.onscroll = function() {
+    scrollFunction();
+};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-    topBtn.style.display = "block";
-  } else {
-    topBtn.style.display = "none";
-  }
+    // If scrolled more than 100px, show button
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        if (topButton) {
+            topButton.style.display = "block";
+        }
+    } else {
+        if (topButton) {
+            topButton.style.display = "none";
+        }
+    }
 }
 
-function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+// When user clicks button, go to top of page
+function scrollToTop() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE
 }
 
-// 2. Simple form validation for enquiry.html
-function validateForm() {
-  let name = document.forms["enquiryForm"]["name"].value;
-  let email = document.forms["enquiryForm"]["email"].value;
-  let message = document.forms["enquiryForm"]["message"].value;
-  
-  if (name == "") {
-    alert("Name must be filled out");
-    return false;
-  }
-  if (email == "") {
-    alert("Email must be filled out");
-    return false;
-  }
-  if (message == "") {
-    alert("Please enter your message");
-    return false;
-  }
-  alert("Thank you! Your enquiry has been sent.");
-  return true;
+
+// LIGHTBOX FOR GALLERY PAGE
+// Click image to make it bigger
+
+// Get all gallery images
+var galleryImages = document.querySelectorAll(".gallery-img");
+var lightbox = document.getElementById("lightbox");
+var lightboxImg = document.getElementById("lightboxImg");
+var lightboxCaption = document.getElementById("lightboxCaption");
+
+// Only run if gallery exists on this page
+if (galleryImages.length > 0) {
+    // Add click event to each gallery image
+    galleryImages.forEach(function(img) {
+        img.onclick = function() {
+            lightbox.style.display = "block"; // Show lightbox
+            lightboxImg.src = this.src; // Set big image to clicked image
+            lightboxCaption.innerHTML = this.alt; // Show image description
+        }
+    });
 }
 
-// 3. Simple image lightbox for Gallery.html
-function openLightbox(imgSrc) {
-  document.getElementById("lightbox").style.display = "block";
-  document.getElementById("lightbox-img").src = imgSrc;
-}
-
+// Close lightbox when X is clicked
 function closeLightbox() {
-  document.getElementById("lightbox").style.display = "none";
+    if (lightbox) {
+        lightbox.style.display = "none";
+    }
 }
+
+// Close lightbox when clicking outside the image
+window.onclick = function(event) {
+    if (event.target == lightbox) {
+        lightbox.style.display = "none";
+    }
+}
+
+
+// CONTACT PAGE FORM VALIDATION
+// Checks if contact form is filled correctly before submitting
+
+// Get contact page form
+var contactPageForm = document.getElementById("contactPageForm");
+
+// Only run if contact form exists on this page
+if (contactPageForm) {
+    contactPageForm.addEventListener("submit", function(event) {
+        event.preventDefault(); // Stop form from submitting normally
+        
+        // Get form values
+        var firstName = document.getElementById("firstName").value.trim();
+        var lastName = document.getElementById("lastName").value.trim();
+        var email = document.getElementById("email").value.trim();
+        var message = document.getElementById("message").value.trim();
+        
+        // Track if form is valid
+        var isValid = true;
+        
+        // Clear old error messages
+        document.getElementById("firstNameError").innerHTML = "";
+        document.getElementById("lastNameError").innerHTML = "";
+        document.getElementById("emailError").innerHTML = "";
+        document.getElementById("messageError").innerHTML = "";
+        
+        // Check First Name
+        if (firstName === "") {
+            document.getElementById("firstNameError").innerHTML = "Please enter your first name";
+            isValid = false;
+        }
+        
+        // Check Last Name
+        if (lastName === "") {
+            document.getElementById("lastNameError").innerHTML = "Please enter your last name";
+            isValid = false;
+        }
+        
+        // Check Email
+        if (email === "") {
+            document.getElementById("emailError").innerHTML = "Please enter your email";
+            isValid = false;
+        } else if (!email.includes("@") || !email.includes(".")) {
+            document.getElementById("emailError").innerHTML = "Please enter a valid email address";
+            isValid = false;
+        }
+        
+        // Check Message
+        if (message === "") {
+            document.getElementById("messageError").innerHTML = "Please enter your message";
+            isValid = false;
+        } else if (message.length < 10) {
+            document.getElementById("messageError").innerHTML = "Message must be at least 10 characters";
+            isValid = false;
+        }
+        
+        // If all valid, show success message
+        if (isValid) {
+            document.getElementById("formSuccess").style.display = "block";
+            document.getElementById("formSuccess").innerHTML = "Thank you " + firstName + "! Your message has been sent. We'll contact you soon.";
+            contactPageForm.reset(); // Clear the form
+            
+            // Hide success message after 5 seconds
+            setTimeout(function() {
+                document.getElementById("formSuccess").style.display = "none";
+            }, 5000);
+        }
+    });
+}
+
+
+// ENQUIRY FORM VALIDATION
+// Checks if enquiry form is filled correctly
+
+// Get enquiry form
+var enquiryForm = document.getElementById("enquiryForm");
+
+// Only run if enquiry form exists on this page
+if (enquiryForm) {
+    enquiryForm.addEventListener("submit", function(event) {
+        event.preventDefault(); // Stop form from submitting
+        
+        // Get form values
+        var fullName = document.getElementById("fullName").value.trim();
+        var enquiryEmail = document.getElementById("enquiryEmail").value.trim();
+        var phone = document.getElementById("phone").value.trim();
+        var priceRange = document.getElementById("priceRange").value;
+        var timeline = document.getElementById("timeline").value;
+        var projectDetails = document.getElementById("projectDetails").value.trim();
+        
+        // Check if at least one service checkbox is ticked
+        var serviceChecked = document.querySelector('input[name="service"]:checked');
+        
+        // Track if form is valid
+        var isValid = true;
+        
+        // Clear old error messages
+        document.getElementById("fullNameError").innerHTML = "";
+        document.getElementById("enquiryEmailError").innerHTML = "";
+        document.getElementById("phoneError").innerHTML = "";
+        document.getElementById("serviceError").innerHTML = "";
+        document.getElementById("priceRangeError").innerHTML = "";
+        document.getElementById("timelineError").innerHTML = "";
+        document.getElementById("projectDetailsError").innerHTML = "";
+        
+        // Check Full Name
+        if (fullName === "") {
+            document.getElementById("fullNameError").innerHTML = "Please enter your full name";
+            isValid = false;
+        } else if (fullName.length < 3) {
+            document.getElementById("fullNameError").innerHTML = "Name must be at least 3 characters";
+            isValid = false;
+        }
+        
+        // Check Email
+        if (enquiryEmail === "") {
+            document.getElementById("enquiryEmailError").innerHTML = "Please enter your email";
+            isValid = false;
+        } else if (!enquiryEmail.includes("@") || !enquiryEmail.includes(".")) {
+            document.getElementById("enquiryEmailError").innerHTML = "Please enter a valid email address";
+            isValid = false;
+        }
+        
+        // Check Phone
+        if (phone === "") {
+            document.getElementById("phoneError").innerHTML = "Please enter your phone number";
+            isValid = false;
+        } else if (phone.length < 10) {
+            document.getElementById("phoneError").innerHTML = "Phone number must be at least 10 digits";
+            isValid = false;
+        }
+        
+        // Check Service Selected
+        if (!serviceChecked) {
+            document.getElementById("serviceError").innerHTML = "Please select at least one service";
+            isValid = false;
+        }
+        
+        // Check Price Range
+        if (priceRange === "") {
+            document.getElementById("priceRangeError").innerHTML = "Please select a price range";
+            isValid = false;
+        }
+        
+        // Check Timeline
+        if (timeline === "") {
+            document.getElementById("timelineError").innerHTML = "Please select a timeline";
+            isValid = false;
+        }
+        
+        // Check Project Details
+        if (projectDetails === "") {
+            document.getElementById("projectDetailsError").innerHTML = "Please describe your project";
+            isValid = false;
+        } else if (projectDetails.length < 20) {
+            document.getElementById("projectDetailsError").innerHTML = "Please provide more details (at least 20 characters)";
+            isValid = false;
+        }
+        
+        // If all valid, show success message
+        if (isValid) {
+            document.getElementById("enquirySuccess").style.display = "block";
+            document.getElementById("enquirySuccess").innerHTML = "Success! Thank you " + fullName + ". We've received your enquiry for " + priceRange + ". We'll contact you within 24 hours.";
+            enquiryForm.reset(); // Clear the form
+            
+            // Scroll to success message
+            document.getElementById("enquirySuccess").scrollIntoView({ behavior: 'smooth' });
+            
+            // Hide success message after 7 seconds
+            setTimeout(function() {
+                document.getElementById("enquirySuccess").style.display = "none";
+            }, 7000);
+        }
+    });
+}
+
+
+// SMOOTH SCROLLING FOR NAV LINKS
+// Makes page scroll smoothly when clicking links
+
+document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        var target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    });
+});
+
+
+// FORM RESET BUTTON MESSAGE
+// Shows message when enquiry form is cleared
+
+if (enquiryForm) {
+    var resetButton = enquiryForm.querySelector('input[type="reset"]');
+    if (resetButton) {
+        resetButton.addEventListener('click', function() {
+            // Clear all error messages
+            var errorSpans = document.querySelectorAll('.error-message');
+            errorSpans.forEach(function(span) {
+                span.innerHTML = "";
+            });
+            
+            // Show reset confirmation
+            alert("Form has been cleared. You can start again.");
+        });
+    }
+}
+
+console.log("Net Wood Works script.js loaded successfully!");
