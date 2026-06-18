@@ -1,7 +1,3 @@
-# Net Wood Works Carpentry – Official Website
-
-This is a simple, multi-page static website for **Net Wood Works Carpentry**, a company specializing in custom furniture, kitchen units, wardrobes, shelves, and other wooden installations. The site is built with plain HTML and can be hosted on any static web server or GitHub Pages.
-
 
 # Net Wood Works Carpentry – Official Website
 
