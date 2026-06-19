@@ -68,18 +68,17 @@ Net-Wood-Works-Carpentry
 ## Changelog
 
 ### Part 3 - 2026-06-18
-**Implemented Part 2 Feedback:**
+**Made changes from Part 2:**
 - Fixed navigation links to use lowercase filenames for GitHub Pages compatibility
 - Corrected broken image paths from Part 2 feedback
 - Updated color contrast on buttons for better accessibility
 
-**New Functionality Added:**
-- Added external JavaScript file `script/script.js` with `defer` attribute
+**New Functionality added**
+- Added external javascript file
 - Implemented client-side form validation on enquiry.html and contact.html
 - Added lightbox gallery modal for viewing images in larger view
 - Created back-to-top button with smooth scroll JavaScript functionality
 - Added error handling to display user-friendly messages for invalid form data
-- Implemented AJAX form submission to prevent page reload
 
 **SEO Enhancements:**
 - Added meta description and keyword tags to all HTML pages
@@ -93,8 +92,13 @@ Net-Wood-Works-Carpentry
 - Deployed website to GitHub Pages
 - Tested all JavaScript functionality on live site
 - Verified responsive design on desktop, tablet, and mobile
+**Deployment configuration:**
+- Source: Deploy from a branch
+- Branch: master
+- Folder: / (root)
+- Live URL: https://mukheli21.github.io/-net-wood-works-carpentry/
 
-  **Screenshots**
+  ### Screenshots
 
 ### Homepage - Desktop View
 ![Homepage Desktop](Screenshots/Home%20page-desktop.png)
